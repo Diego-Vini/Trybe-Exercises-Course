@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Curriculo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+  <header class='page-head default-page'>
+    <h1>Cadastro de Curriculo</h1>
+  </header>
+  <!-- Conteudo Principal -->
+  <main class='page-main default-page'>
+    <form action='' method='GET'>
+      <fieldset class='curriculum-data'>
+        <legend>Dados Pessoais</legend>
+        <!-- Nome -->
+          <div class="default-main">
+            <label for="personal-data" >Nome:</label>
+            <input type="text" name="pesonal-data" id="personal-data" placeholder="Digite seu nome completo" 
+            size="40" maxlength="40" >
+          </div>
+          <!-- Email -->
+          <div class="default-main">
+            <label for="personal-data" >E-mail:</label>
+            <input type="text" name="pesonal-data" id="personal-data" placeholder="Digite seu e-mail" 
+            size="50" maxlength="50" >
+          </div>
+          <!-- CPF -->
+          <div class="default-main">
+            <label for="personal-data" >CPF:</label>
+            <input type="text" name="pesonal-data" id="personal-data" placeholder="Digite seu cpf" 
+            size="11" maxlength="11" >
+          </div>
+          <!-- Endereço -->
+          <div class="default-main">
+            <label for="personal-data" >Endereço Residencial:</label>
+            <input type="text" name="pesonal-data" id="personal-data" placeholder="Digite seu endereço completo" 
+            size="28" maxlength="28" >
+          </div>
+          <!-- Estado -->
+          <select  class="state default-main" name="estado" id="state" >
+          </select>
+          <!-- Tipo de Moradia -->
+          <div class="default-main" >
+              <p>Tipo de Moradia</p>
+              <br>
+            <label for="house"> 
+                <input type="radio" name="home" value="house" id="house" checked> Casa
+            </label>
+            <label for="apartment"> 
+                <input type="radio" name="home" value="apartment" id="apartment"> Apartamento
+            </label>
+          </div>
+         
+      </fieldset>
+      <!-- Dados do ultimo emprego -->
+      <fieldset class="data-office" >
+        <legend>Dados do Ultimo Emprego</legend>
+        <div class="default-main">
+          <textarea class="curriculum-data" name="description-data" id="description-data" cols="50"
+           rows="10" maxlength="10000" placeholder="Escreva um resumo do seu curriculo"></textarea>
+        </div>
+        <div class="default-main">
+          <label for="input-office">Cargo:
+            <input type="text" name="office" id="input-office" 
+             maxlength="40">
+          </label>
+        </div>
+        <div class="default-main">
+          <label for="input-job-description">Descrição do cargo:
+            <input type="text" name="job-description" id="input-job-description" 
+             maxlength="500" >
+          </label>
+        </div>
+        <div class="default-main">
+          <label for="date-start"> Data de inicio:
+            <input type="text"  placeholder="dd/mm/aaaa" id="date-start">
+          </label>
+          </div>
+      </fieldset>
+        <div class="default-main">
+          <button type="submit" id="button">Enviar</button>
+        </div>
+    </form>
+  </main> 
+  <script src="script.js"></script>   
+</body>
+</html>

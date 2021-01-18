@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   font-family: sans-serif, Helvetica;
+}
+.default-page {
+  max-width: 80%;  
+  margin: 18px auto;
+}
+.page-head {
+  text-align: center;
+  border: 1px solid black;
+}
+.default-main {
+  margin: 10px;
+}
+#personal-data, #input-job-description {
+  width: 100%;
+}
+
+#description-data {
+  width: 100%;
+}
+#button {
+  width: 100px;
+  height: 30px;
+}
+

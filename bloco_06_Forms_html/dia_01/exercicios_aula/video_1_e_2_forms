@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>FORMULÀRIO</h1>
+  <form action="" method="GET">
+      <label for="input-text">Digite seu nome</label>
+    <input type="text" placeholder="Digite algo" required 
+    class="" value="Diego" name="texto" id="input-text">
+    <br>
+    <textarea name="" id="" cols="30" rows="10">Texto pronto!</textarea>
+    <br>
+    <input type="checkbox" id="esporte-1" value="fut" name="esporte" checked >Futebol
+    <input type="checkbox" id="esporte-2" value="vol" name="esporte" >Volei
+    <input type="checkbox" id="esporte-3" value="pet" name="esporte" >Peteca
+    <input type="checkbox" id="esporte-4" value="bas" name="esporte" >Baskete
+    <br>
+    <br>
+    <label for="hub1">
+        <input type="radio" id="hub1" name="hub" value="sp">São Paulo  
+    </label>
+    <label for="hub2">
+        <input type="radio" id="hub2" name="hub" value="bh">Belo Horizonte
+    </label>
+    <label for="hub3">
+        <input type="radio" id="hub3" name="hub" value="fl">Florianopolis
+    </label>
+    <label for="hub4">
+        <input type="radio" id="hub4" name="hub" value="mc">Macedonia
+    </label>
+    <br>
+    <br>
+    <select name="estado" id="dropdown-estado">
+        <option value="sp">São Paulo</option>
+        <option value="ba">Bahia</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="am">Amazonas</option>
+    </select>
+    <br>
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha">
+    <br>
+    <br>
+    <input type="file" name="" id="">
+    <br>
+    <br>    
+    <button type="submit">Enviar</button>
+    <br>
+    <br>
+    <p>Usuário</p>
+    <input type="text" name="user" required>
+    <p>Senha</p>
+    <input type="password" name="senha" id="" required>
+    <br>
+    <button type="submit" class="" name="" id="">Enviar</button>
+  </form>   
+</body>
+</html>
+ <!-- Form = criar formulario
+ action - Para onde é enviado os dados
+ method - metodo utilizado -->

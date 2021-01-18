@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <div>
+        <span id="text">0</span>
+    </div>
+    <button id="button_text">Click Aqui</button>
+</body>
+<script>
+    let clickCount = 0
+    let textToDisplay = document.getElementById('text')
+
+    document.getElementById('button_text')
+    .addEventListener('click', _ => textToDisplay.innerHTML = clickCount += 1)
+</script>
+</html>
