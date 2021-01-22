@@ -1,4 +1,3 @@
-//Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
 const lesson1 = {
     materia: 'Matemática',
     numeroEstudantes: 20,
@@ -19,7 +18,13 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  const getValueByNumber = (obj, value) => Object.values(obj)[value];
+  const verifyPair = (obj, shift, night) => {
+    const arr = Object.entries(obj);
+    let isEqual = false;
+    for (let index in arr) {
+        if (arr[index][0] === shift && arr[index][1] === night) isEqual = true
+    }
+    return isEqual
+  }
 
-
-  console.log(getValueByNumber(lesson1, 0))
+  console.log(verifyPair(lesson3, 'turno', 'noite'));
