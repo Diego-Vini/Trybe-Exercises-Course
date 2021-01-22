@@ -1,4 +1,4 @@
-//Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
+//Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 const lesson1 = {
     materia: 'Matemática',
     numeroEstudantes: 20,
@@ -19,10 +19,8 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  const addTurno = (lesson1, key, value ) => {
-      return lesson1[key] = value
+  const listValue = (obj) => {
+      return Object.values(obj);
   }
 
-  addTurno(lesson1, 'turno', 'manhã')
-
-  console.log(lesson1)
+  console.log(listValue(lesson1));
